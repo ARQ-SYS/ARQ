@@ -3,30 +3,26 @@ use std::ffi::OsStr;
 use libloading::{Library, Symbol};
 use rocket::Route;
 
-//#[cfg(feature = "broken")]
-
 
 use tracing::{info, debug};
-
-use crate::pluggable::{middleware::MiddlewareComponent, component::Component};
-
 use anyhow::{Result, Context};
+use crate::{component::Component, middleware::MiddlewareComponent};
 
 use super::middleware::DynFairing;
 
 
 /// This struct is used to orchestrate the loading of the components and middlewares.
 /// It will be used by the CORE to load the components and middlewares.
-pub struct ComponentManager {
+pub struct PluginManager {
     components: Vec<Box<dyn Component>>,
     middlewares: Vec<Box<dyn MiddlewareComponent>>,
     loaded_libs: Vec<Library>
 }
 
-impl ComponentManager {
+impl PluginManager {
     /// Constructs a new ComponentManager.
     pub fn new() -> Self {
-        ComponentManager {
+        PluginManager {
             components: Vec::new(),
             middlewares: Vec::new(),
             loaded_libs: Vec::new()

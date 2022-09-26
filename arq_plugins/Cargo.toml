@@ -1,5 +1,5 @@
 [package]
-name = "arq_components"
+name = "arq_plugins"
 version = "0.1.0"
 edition = "2021"
 

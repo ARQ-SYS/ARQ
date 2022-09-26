@@ -44,7 +44,6 @@ impl MiddlewareFactory {
     /// This consumes the factory
     pub fn export(mut self) -> (*mut Box<dyn Fairing>, usize, usize) {
 
-
         self.middlewares.shrink_to_fit();
         assert!(self.middlewares.len() == self.middlewares.capacity());
 

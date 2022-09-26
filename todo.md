@@ -1,5 +1,5 @@
 # TODO
-- [ ] Refactor arq_components - change name and mod layout to be more intuitive
+- [x] Refactor arq_components - change name and mod layout to be more intuitive
 
 - [ ] Figure out specs for external components
 - [ ] Find a better name for external components 
@@ -9,4 +9,6 @@
 
 - [ ] Implement command spec in core
 
-- [ ] Make middlewares work
+- [x] Make middlewares work
+
+- [ ] Make a declarative macro for bootstrapping/exporting the middleware/component (https://www.youtube.com/watch?v=q6paRBbLgNw)
