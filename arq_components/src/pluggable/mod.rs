@@ -1,12 +1,8 @@
+
 pub mod component;
 pub mod manager;
 pub mod middleware;
 
-pub mod prelude {
-    pub use crate::component::*;
-    pub use crate::manager::*;
-    pub use crate::middleware::*;
-}
 
 /// This macro is used to declare a component.
 /// It must be used excatly once per project.

@@ -1,2 +1,2 @@
 [workspace]
-members = ["core", "arq_plugins"]
+members = ["core", "arq_components"]
