@@ -11,3 +11,5 @@ tokio = "1.20.1"
 arq_components = { version = "0.1.0", path = "../arq_components" }
 tracing = "0.1.36"
 tracing-subscriber = "0.3.15"
+
+sea-orm = { version = "0.6.0", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros", "mock"] }
