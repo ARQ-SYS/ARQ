@@ -1,5 +1,4 @@
 # TODO
-- [x] Refactor arq_components - change name and mod layout to be more intuitive
 
 - [ ] Figure out specs for external components
 - [ ] Find a better name for external components 
